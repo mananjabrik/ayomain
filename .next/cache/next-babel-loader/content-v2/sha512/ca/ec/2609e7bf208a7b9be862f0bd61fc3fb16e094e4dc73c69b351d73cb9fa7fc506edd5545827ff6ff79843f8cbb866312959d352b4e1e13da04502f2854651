@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport { Container } from \"@chakra-ui/react\";\nimport { Navbar } from \"../components/molecules\";\nexport default function Home() {\n  return /*#__PURE__*/_jsx(Container, {\n    maxW: \"4xl\",\n    children: /*#__PURE__*/_jsx(Navbar, {})\n  });\n}","map":null,"metadata":{},"sourceType":"module"}
