@@ -1,5 +1,5 @@
 import { Box, Container, Wrap, WrapItem } from "@chakra-ui/react";
-import { Card } from "../components/molecules";
+import { Card, Navbar } from "../components/molecules";
 
 export default function Home() {
   const pink = "linear(to-r, #f95b5b, #d53f62)";
@@ -8,36 +8,40 @@ export default function Home() {
   return (
     <Box>
       <Container>
-        <Wrap spacing="none">
-          <WrapItem width="50%" p="2px">
-            <Card
-              tittle="Main Bola"
-              img="https://img.icons8.com/doodle/96/000000/football2--v1.png"
-              color={teal}
-            />
-          </WrapItem>
-          <WrapItem width="50%" p="2px">
-            <Card
-              tittle="Main Basket"
-              img="https://img.icons8.com/doodle/96/000000/basketball--v1.png"
-              color={pink}
-            />
-          </WrapItem>
-          <WrapItem width="50%" p="2px">
-            <Card
-              tittle="Ping Pong"
-              img="https://img.icons8.com/doodle/96/000000/ping-pong.png"
-              color={blue}
-            />
-          </WrapItem>
-          <WrapItem width="50%" p="2px">
-            <Card
-              tittle="Volley"
-              img="https://img.icons8.com/cotton/64/000000/volleyball.png"
-              color="gray.500"
-            />
-          </WrapItem>
-        </Wrap>
+        <Navbar />
+        <Box mt="2rem">
+          <Wrap spacing="none">
+            <WrapItem width="50%" p="2px">
+              <Card
+                tittle="Main Bola"
+                // img="https://img.icons8.com/doodle/96/000000/football2--v1.png"
+                color={teal}
+              />
+            </WrapItem>
+
+            {/* <WrapItem width="50%" p="2px">
+              <Card
+                tittle="Main Basket"
+                img="https://img.icons8.com/doodle/96/000000/basketball--v1.png"
+                color={pink}
+              />
+            </WrapItem>
+            <WrapItem width="50%" p="2px">
+              <Card
+                tittle="Ping Pong"
+                img="https://img.icons8.com/doodle/96/000000/ping-pong.png"
+                color={blue}
+              />
+            </WrapItem>
+            <WrapItem width="50%" p="2px">
+              <Card
+                tittle="Volley"
+                img="https://img.icons8.com/cotton/64/000000/volleyball.png"
+                color="gray.500"
+              />
+            </WrapItem> */}
+          </Wrap>
+        </Box>
       </Container>
     </Box>
   );
